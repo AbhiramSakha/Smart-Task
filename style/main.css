@@ -1,0 +1,181 @@
+/* Smooth Scroll Behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonts and base styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f7f9fc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Section */
+header {
+  background: #2f3542;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #1abc9c;
+}
+
+/* Main Content */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+/* Task Panel Styling */
+.task-panel {
+  background: white;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.task-panel h2 {
+  margin-bottom: 15px;
+  color: #2f3542;
+}
+
+/* Inputs & Buttons */
+input[type="text"],
+select {
+  padding: 12px;
+  width: 60%;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  background-color: #1abc9c;
+  color: white;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #16a085;
+}
+
+/* Task List Section */
+ul#taskList {
+  list-style: none;
+  margin-top: 20px;
+}
+
+ul#taskList li {
+  background: #f1f2f6;
+  margin: 10px 0;
+  padding: 15px;
+  border-left: 8px solid #ced6e0;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Priority Colors */
+.priority-High {
+  border-color: #e74c3c;
+}
+.priority-Medium {
+  border-color: #f39c12;
+}
+.priority-Low {
+  border-color: #27ae60;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Filter Panel */
+.filter-panel {
+  background: white;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.filter-panel select {
+  width: auto;
+  margin-left: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #2f3542;
+  color: #fff;
+  font-size: 0.9rem;
+  margin-top: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
+  }
+}

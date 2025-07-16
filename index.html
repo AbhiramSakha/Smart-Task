@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmartTask - Modern Task Manager</title>
+  <link rel="stylesheet" href="style/main.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">🧠 SmartTask</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#tasks">Tasks</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="home" class="task-panel">
+      <h2>Welcome to SmartTask</h2>
+      <p>A smart and modern to-do task manager.</p>
+    </section>
+
+    <section id="tasks" class="task-panel">
+      <h2>Add New Task</h2>
+      <input type="text" id="taskInput" placeholder="What do you need to do?" />
+      <select id="priorityInput">
+        <option>Low</option>
+        <option selected>Medium</option>
+        <option>High</option>
+      </select>
+      <button onclick="addTask()">Add Task</button>
+    </section>
+
+    <section class="filter-panel">
+      <h2>Your Tasks</h2>
+      <label for="filterPriority">Filter by Priority:</label>
+      <select id="filterPriority" onchange="filterTasks()">
+        <option>All</option>
+        <option>High</option>
+        <option>Medium</option>
+        <option>Low</option>
+      </select>
+      <ul id="taskList"></ul>
+    </section>
+
+    <section id="about" class="task-panel">
+      <h2>About SmartTask</h2>
+      <p>SmartTask helps you organize your tasks by priority and track completion status easily.</p>
+    </section>
+
+    <section id="contact" class="task-panel">
+      <h2>Contact</h2>
+      <p>Email: vaultfcodes@gmail.com</p>
+      <p>GitHub: github.com/vaultfcodeds</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SmartTask Platform — Designed by You</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
