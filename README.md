@@ -1,4 +1,5 @@
 
+
 🧠 Smart-Task
 
 A simple, responsive task management web application built with HTML, CSS, and JavaScript. This project lets users create, view, edit, and organize daily tasks efficiently.
